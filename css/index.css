@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+#canvas {
+    display: block;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: lightblue;
+}
+
+
+.actions {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    height: 70px;
+
+}
+.actions .tools li {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.actions .tools .active {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: grey;
+}
+
+.actions .colors {
+    margin-top: 50%;
+    width: 50px;
+}
+
+.actions .colors li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ccc;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 30px;
+    transform: scale(1.2);
+}
+
+.actions .colors .active {
+    box-shadow: 1px 1px 10px 1px;
+    transform: scale(1.5);
+}
+
+.actions .sizes {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+}
+
+.sizes {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+}
+
+.sizes li {
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.sizes .thin {
+    width: 180px;
+    height: 0px;
+    border-top: 3px solid #000;
+}
+
+.sizes .thick {
+    margin-top: 40px;
+    width: 180px;
+    border-top: 10px solid #000;
+}
+.sizes .middle {
+    margin-top: 40px;
+    width: 180px;
+    border-top: 6px solid #000;
+}
+
+.sizes .active {
+    transform: scale(1.5);
+}

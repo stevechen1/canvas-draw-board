@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画板</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="actions" id="action">
+        <ol class="tools">
+            <li id="pencil" class="pencil active" title="钢笔"><i class="iconfont icon-pencil"></i></li>
+            <li id="brush" class="brush" title="笔刷"><i class="iconfont icon-brush"></i></li>
+            <li id="eraser" class="eraser" title="橡皮擦"><i class="iconfont icon-eraser"></i></li>
+            <li id="clear" class="clear" title="清空画板"><i class="iconfont icon-clear"></i></li>
+            <li id="undo" class="undo" title="撤销"><i class="iconfont icon-undo"></i></li>
+            <li id="save" class="save" title="保存"><i class="iconfont icon-save"></i></li>
+        </ol>
+        <ol class="colors">
+            <li id="red" class="red active" style="background-color: red;"></li>
+            <li id="yellow" class="yellow" style="background-color: yellow;"></li>
+            <li id="blue" class="blue" style="background-color: blue;"></li>
+            <li id="green" class="green" style="background-color: green;"></li>
+        </ol>
+        <ol class="sizes">
+            <li id="thin" class="thin active"></li>
+            <li id="middle" class="middle"></li>
+            <li id="thick" class="thick"></li>
+        </ol>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
